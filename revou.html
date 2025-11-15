@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portofolio — Fadlan</title>
+  <meta name="description" content="Portofolio profesional Nama Anda — desainer / developer / freelancer.">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#6ee7b7;--muted:#9aa4b2;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;background:linear-gradient(180deg,#071022 0%, #071022 40%, #071d2d 100%);color:#e6eef6;line-height:1.5}
+    .container{max-width:1000px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;gap:18px}
+    .avatar{width:96px;height:96px;border-radius:16px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#042029;font-size:28px}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    nav{margin-left:auto}
+    nav a{color:var(--muted);text-decoration:none;margin-left:12px}
+    .hero{display:grid;grid-template-columns:1fr;gap:20px;padding:28px;margin-top:18px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:14px}
+    .cta{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);color:#042029;text-decoration:none;font-weight:600}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:20px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{padding:6px 10px;border-radius:999px;background:var(--glass);color:var(--muted);font-weight:600}
+    footer{text-align:center;color:var(--muted);margin-top:26px}
+    form input, form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    form button{margin-top:10px;padding:10px 14px;border-radius:10px;border:none;background:var(--accent);color:#042029;font-weight:700}
+    @media (max-width:800px){.grid{grid-template-columns:1fr}.project-grid{grid-template-columns:1fr}.avatar{width:72px;height:72px;font-size:20px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">NA</div>
+      <div>
+        <h1>Muhammad Fadlan<span style="font-size:14px;color:var(--muted);font-weight:600">• Web Developer & Designer</span></h1>
+        <p class="lead">Saya membuat situs, aplikasi, dan brand experience yang bersih, cepat, dan mudah dipakai. Tersedia untuk projek freelance dan kontrak.</p>
+      </div>
+      <nav>
+        <a href="#about">Tentang</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h2>Hai — saya Fadlan</h2>
+        <p class="lead">Spesialis front‑end, UI/UX, dan pembuatan prototipe. Saya menggabungkan desain yang estetis dengan kode yang bersih untuk menciptakan pengalaman yang berdampak.</p>
+        <p style="margin-top:12px"><a class="cta" href="#projects">Lihat Proyek</a></p>
+      </div>
+
+      <div class="card">
+        <h3>Ringkasan</h3>
+        <div class="grid" style="margin-top:12px">
+          <div>
+            <strong>Lokasi</strong>
+            <p class="lead">bogor</p>
+          </div>
+          <div>
+            <strong>Email</strong>
+            <p class="lead">muhammadfadlan@smkwikrama.sch.id</p>
+          </div>
+        </div>
+        <div style="margin-top:12px">
+          <strong>Keahlian</strong>
+          <div class="skills" style="margin-top:8px">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">React</span>
+            <span class="skill">Figma</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="card" style="margin-top:18px">
+      <h3>Tentang Saya</h3>
+      <p class="lead">Tulis 2–4 kalimat tentang latar belakangmu, pendidikan, pengalaman kerja, dan nilai tambah yang kamu bawa ke proyek. Contoh: "Saya berpengalaman 4 tahun membangun antarmuka web untuk startup dan UMKM."</p>
+    </section>
+
+    <section id="projects" style="margin-top:18px">
+      <div class="card">
+        <h3>Proyek Pilihan</h3>
+        <div class="project-grid" style="margin-top:12px">
+          <div class="project">
+            <h4>Proyek A</h4>
+            <p class="lead">Deskripsi singkat proyek, peran anda, dan teknologi yang dipakai.</p>
+            <p style="margin-top:8px"><a href="#" style="color:var(--accent);text-decoration:none">Lihat detail →</a></p>
+          </div>
+          <div class="project">
+            <h4>Proyek B</h4>
+            <p class="lead">Deskripsi singkat proyek, peran anda, dan teknologi yang dipakai.</p>
+            <p style="margin-top:8px"><a href="#" style="color:var(--accent);text-decoration:none">Lihat detail →</a></p>
+          </div>
+          <div class="project">
+            <h4>Proyek C</h4>
+            <p class="lead">Deskripsi singkat proyek, peran anda, dan teknologi yang dipakai.</p>
+            <p style="margin-top:8px"><a href="#" style="color:var(--accent);text-decoration:none">Lihat detail →</a></p>
+          </div>
+          <div class="project">
+            <h4>Proyek D</h4>
+            <p class="lead">Deskripsi singkat proyek, peran anda, dan teknologi yang dipakai.</p>
+            <p style="margin-top:8px"><a href="#" style="color:var(--accent);text-decoration:none">Lihat detail →</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card" style="margin-top:18px">
+      <h3>Kontak</h3>
+      <p class="lead">Ingin bekerja sama? Isi formulir atau kirim email langsung.</p>
+      <form onsubmit="handleSubmit(event)">
+        <input type="text" id="name" placeholder="Nama" required>
+        <input type="email" id="email" placeholder="Email" required style="margin-top:8px">
+        <textarea id="message" rows="4" placeholder="Pesan" required style="margin-top:8px"></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+      <p id="sentMsg" style="display:none;margin-top:10px;color:var(--accent);font-weight:700">Pesan terkirim — terima kasih! (Hanya simulasi di versi lokal.)</p>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Nama Anda — Portofolio</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function handleSubmit(e){
+      e.preventDefault();
+      // Contoh sederhana: buka mailto (bisa sesuaikan ke backend atau form handler)
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const subject = encodeURIComponent('Permintaan dari ' + name);
+      const body = encodeURIComponent('Dari: ' + name + ' (' + email + ')\n\n' + message);
+      // Jika ingin mengirim melalui email klien pengguna, uncomment baris berikut:
+      // window.location.href = `mailto:nama@domain.com?subject=${subject}&body=${body}`;
+      document.getElementById('sentMsg').style.display = 'block';
+      setTimeout(()=>{document.getElementById('sentMsg').style.display='none'},3000);
+    }
+  </script>
+</body>
+</html>
